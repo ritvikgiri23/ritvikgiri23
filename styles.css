@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 0.95rem;
+    color: #34495e;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item i {
+    color: #3498db;
+    width: 16px;
+}
+
+.contact-item a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #3498db;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.summary {
+    font-size: 1rem;
+    color: #34495e;
+    text-align: justify;
+}
+
+.job {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.company {
+    color: #3498db;
+    font-weight: 500;
+}
+
+.duration {
+    background: #3498db;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.job-description {
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.achievements {
+    list-style: none;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.achievements li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.skill-category h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background: #ecf0f1;
+    color: #34495e;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.education-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.degree {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.school {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.graduation {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: #d5dbdb;
+    color: #2c3e50;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body {
+        font-size: 12px;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .section {
+        break-inside: avoid;
+        margin-bottom: 1.5rem;
+    }
+}
